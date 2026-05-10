@@ -25,7 +25,7 @@ body{
   inset: 0;
   background:
     linear-gradient(120deg, rgba(10,15,30,.82), rgba(12,10,24,.72)),
-    url("/Tiempo-y-vida/assets/images/fondo.jpg") center/cover no-repeat;
+    url("/Tiempo-y-vida/assets/images/PC-Wallpaper-Aesthetic-Free-Download.jpg") center/cover no-repeat;
   filter: saturate(1.1);
   transform: scale(1.02);
   z-index: -2;
@@ -116,6 +116,15 @@ h1{
   border-radius: 999px;
   cursor: pointer;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.music-icon{
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
 }
 
 .link-btn{
@@ -131,6 +140,13 @@ h1{
   width: 24px;
   height: 24px;
   object-fit: contain;
+}
+
+.exclamation-icon{
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 4px;
 }
 
 .music-btn:hover,
