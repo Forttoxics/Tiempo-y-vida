@@ -1,29 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi libro</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+  <div class="bg"></div>
 
-    <header>
-        <h1>Bienvenido a mi página</h1>
-    </header>
+  <main class="page">
+    <section class="hero glass">
+      <div class="cover-wrap">
+        <img src="./assets/img/portada-principal.jpg" alt="Portada del libro" class="cover" />
+      </div>
 
-    <main>
-        <img src="assets/images/portada.jpg" alt="Imagen principal">
+      <div class="hero-text">
+        <p class="eyebrow">Bienvenido a mi libro</p>
+        <h1 id="bookTitle">Título de tu libro</h1>
+        <p class="subtitle">
+          Una historia hecha para quienes buscan una lectura con corazón, misterio y estilo.
+        </p>
 
-        <button id="musicButton">Reproducir Música</button>
+        <div class="music-row">
+          <button class="music-btn" data-audio="./assets/musica/lofi-1.mp3">🎵 Ambiente 1</button>
+          <button class="music-btn" data-audio="./assets/musica/lofi-2.mp3">🎵 Ambiente 2</button>
+          <button class="music-btn" data-audio="./assets/musica/lofi-3.mp3">🎵 Ambiente 3</button>
+        </div>
+      </div>
+    </section>
 
-        <audio id="backgroundMusic" src="assets/music/cancion1.mp3"></audio>
+    <section class="video-section glass">
+      <h2>Video destacado</h2>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID_AQUI"
+          title="Video promocional"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
 
-        <br><br>
+    <section class="links-section glass">
+      <h2>Accesos rápidos</h2>
 
-        <a href="https://youtube.com" target="_blank">Mi enlace</a>
-    </main>
+      <a class="link-btn" href="TU_LINK_AMAZON" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/iconos/amazon.png" alt="Amazon">
+        Ver en Amazon
+      </a>
 
-    <script src="script.js"></script>
+      <a class="link-btn" href="TU_LINK_WATTPAD" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/iconos/wattpad.png" alt="Wattpad">
+        Leer en Wattpad
+      </a>
+
+      <a class="link-btn" href="TU_LINK_INSTAGRAM" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/iconos/instagram.png" alt="Instagram">
+        Instagram del autor
+      </a>
+
+      <a class="link-btn" href="TU_LINK_ADELANTO" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/iconos/libro.png" alt="Adelanto">
+        Ver adelanto
+      </a>
+
+      <a class="link-btn" href="TU_LINK_INFO" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/iconos/info.png" alt="Información">
+        Información del libro
+      </a>
+
+      <a class="link-btn" href="TU_LINK_PDF" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/iconos/pdf.png" alt="PDF">
+        Recibir libro completo
+      </a>
+
+      <a class="link-btn secondary" href="TU_LINK_LINKTREE" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/iconos/link.png" alt="Linktree">
+        Volver a Linktree
+      </a>
+    </section>
+  </main>
+
+  <audio id="audioPlayer" preload="auto"></audio>
+  <script src="./script.js"></script>
 </body>
 </html>
