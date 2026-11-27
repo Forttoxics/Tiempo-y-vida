@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiempo y Vida</title>
+  <link rel="stylesheet" href="/Mi-pagina-web/style.css" />
+  <link rel="stylesheet" href="ia.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <!--Partículas-->
+  <canvas id="particles"></canvas>
+
+  <main class="page">
+    <section class="hero glass">
+
+      <!--Portada-->
+      <div class="cover-wrap">
+        <div class="cover-card">
+          <img src="/Mi-pagina-web/assets/imagenes/portada-pasta blanda.jpg" alt="Portada del libro" class="cover" />
+          <div class="cover-overlay">
+            <p class="overlay-synopsis">
+              Nunca debes menospreciar a los demás por querer ser felices, aún si no toman tu camino. 
+              Pensar que por no hacerlo hacen mal es egocentrismo
+            </p>
+            <div class="overlay-stars">
+              <span class="star" style="--d:0">★</span>
+              <span class="star" style="--d:1">★</span>
+              <span class="star" style="--d:2">★</span>
+              <span class="star" style="--d:3">★</span>
+              <span class="star" style="--d:4">★</span>
+            </div>
+            <p class="overlay-label">Christian Yandel</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <p class="eyebrow">Bienvenido a mi libro</p>
+        <h1 id="bookTitle"></h1>
+
+        <!-- Cita flotante-->
+        <p class="floating-quote" id="floatingQuote"></p>
+
+        <p class="subtitle">
+          El tiempo apurara, esperando un resultado, un proceso, un inicio...
+        </p>
+
+        <div class="music-row">
+          <div class="music-btn-wrap">
+            <button class="music-btn" data-audio="/Mi-pagina-web/assets/musica/1 am [8-_7gfQCvY4].mp3">
+              <img src="/Mi-pagina-web/assets/iconos/headphones-solid-full.svg" alt="Headphones" class="music-icon">
+              Chill 1
+            </button>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+
+          <div class="music-btn-wrap">
+            <button class="music-btn" data-audio="/Mi-pagina-web/assets/musica/Nujabes - Light on the land [Official Audio] [0qR3B1i3FBk].mp3">
+              <img src="/Mi-pagina-web/assets/iconos/headphones-solid-full.svg" alt="Headphones" class="music-icon">
+              Chill 2
+            </button>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+
+          <div class="music-btn-wrap">
+            <button class="music-btn" data-audio="/Mi-pagina-web/assets/musica/Rainy forest [xsrei0AatMc].mp3">
+              <img src="/Mi-pagina-web/assets/iconos/deezer-brands-solid-full.svg" alt="Deezer" class="music-icon">
+              Chill 3
+            </button>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section glass">
+      <h2>Segunda Portada + Video Promocional</h2>
+      <a href="https://youtube.com/shorts/qdnCFAXsSNU?si=oFtMidv4wLNf-HtX" target="_blank" rel="noopener noreferrer" class="video-link">
+        <img src="/Mi-pagina-web/assets/imagenes/portada pasta dura.jpg" alt="Segunda Portada" class="video-poster" />
+      </a>
+    </section>
+
+    <section class="links-section glass">
+      <h2>Accesos rápidos</h2>
+
+      <a class="link-btn" href="https://www.amazon.com/dp/B0GDV7CG6M" target="_blank" rel="noopener noreferrer">
+        <img src="/Mi-pagina-web/assets/iconos/amazon-brands-solid-full.svg" alt="Amazon">
+        Ver en Amazon
+      </a>
+
+      <a class="link-btn" href="https://www.wattpad.com/story/403445678-tiempo-y-vida" target="_blank" rel="noopener noreferrer">
+        <img src="/Mi-pagina-web/assets/iconos/w-solid-full.svg" alt="Wattpad">
+        Leer en Wattpad
+      </a>
+
+      <a class="link-btn" href="https://www.instagram.com/yandellvillalobos?igsh=NGljMmgwbG8yNGlp&utm_source=qr" target="_blank" rel="noopener noreferrer">
+        <img src="/Mi-pagina-web/assets/iconos/instagram-brands-solid-full.svg" alt="Instagram">
+        Instagram del autor
+      </a>
+
+      <a class="link-btn" href="https://drive.google.com/file/d/163St6h7R6JfIw5BI8gP_7hRY0-RrR2IX/view?pli=1" target="_blank" rel="noopener noreferrer">
+        <img src="/Mi-pagina-web/assets/iconos/book-solid-full.svg" alt="Adelanto">
+        Ver adelanto
+      </a>
+
+      <details class="info-box">
+        <summary>
+          <img src="/Mi-pagina-web/assets/iconos/exclamation-solid-full.svg" alt="Información" class="exclamation-icon">
+          Información
+        </summary>
+        <p>
+          Esta pagina esta creada con el fin de poder obtener reseñas gratuitas sobre mi libro.
+          Si presionas el botón del adelanto, te abrirá un archivo word, allí podrás leer una pequeña parte del libro.
+          Si presionas "Recibir libro completo" Te abrirá una pagina para poder responder que te pareció lo que leíste. al terminar el formulario, podrás hacer click, en el drive, del libro completo.
+        </p>
+      </details>
+
+      <a class="link-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSds9KhUy895AvtsV58eeBa0yp60gaUyJN4Gl2yR_fSJW6jj8w/alreadyresponded?pli=1&pli=1" target="_blank" rel="noopener noreferrer">
+        <img src="/Mi-pagina-web/assets/iconos/file-pdf-solid-full.svg" alt="PDF">
+        Recibir libro completo
+      </a>
+
+      <a class="link-btn secondary" href="https://linktr.ee/ChristianYandel" target="_blank" rel="noopener noreferrer">
+        <img src="/Mi-pagina-web/assets/iconos/l-solid-full.svg" alt="Linktree">
+        Volver a Linktree
+      </a>
+    </section>
+
+    <section class="links-section glass" id="naturaleza-section">
+  <h2>¿Cuál es tu naturaleza?</h2>
+  <button class="link-btn" id="naturaleza-btn">
+    <img src="/Mi-pagina-web/assets/iconos/naturaleza/nature.svg" alt="Descubre" style="width:24px;height:24px;">
+    Descubre tu naturaleza
+  </button>
+  <div id="naturaleza-resultado" class="naturaleza-resultado hidden">
+    <img id="naturaleza-icono" src="" alt="" class="naturaleza-icono" />
+    <div>
+      <p id="naturaleza-nombre" class="naturaleza-nombre"></p>
+      <p id="naturaleza-texto" class="naturaleza-descripcion"></p>
+    </div>
+  </div>
+</section>
+
+<section class="glass" id="evento-section">
+
+  <!-- Cabecera con progreso y puntos en vivo -->
+  <div id="evento-header">
+    <h2 id="evento-titulo">⟁ El Momento Decisivo</h2>
+    <div id="evento-progreso">
+      <span id="evento-contador">Momento 1 de 5</span>
+      <span id="evento-puntos-live">⬡ 0 pts</span>
+    </div>
+  </div>
+
+  <!-- Escena + puertas -->
+  <div id="evento-intro">
+    <p id="evento-escena" class="evento-escena"></p>
+    <div id="evento-puertas" class="evento-puertas"></div>
+  </div>
+
+  <!-- Resultado por escenario -->
+  <div id="evento-resultado" class="evento-resultado hidden">
+    <div id="evento-resultado-inner">
+      <img src="/Mi-pagina-web/assets/iconos/eventos/puerta.svg" alt="Puerta" class="evento-puerta-icono" />
+      <p id="evento-resultado-texto" class="evento-resultado-texto"></p>
+      <blockquote id="evento-extracto" class="evento-extracto hidden"></blockquote>
+      <button id="evento-siguiente" class="evento-reiniciar-btn">→ Siguiente momento</button>
+    </div>
+  </div>
+
+  <!-- Pantalla final -->
+  <div id="evento-final" class="evento-final hidden">
+    <img src="/Mi-pagina-web/assets/iconos/puntos/reloj.svg" alt="Puntaje" class="evento-reloj-icono" />
+    <p id="evento-puntaje-texto" class="evento-puntaje-numero"></p>
+    <p id="evento-rango-texto" class="evento-rango"></p>
+    <p id="evento-rango-desc" class="evento-rango-desc"></p>
+    <button id="evento-reiniciar" class="evento-reiniciar-btn">↩ Volver a jugar</button>
+  </div>
+
+</section>
+
+<section class="glass" id="canje-section">
+
+  <!-- Cabecera con puntos disponibles -->
+  <div id="canje-header">
+    <h2 id="canje-titulo">🪙 Tienda de Fragmentos</h2>
+    <div id="canje-puntos-wrap">
+      <img src="/Mi-pagina-web/assets/iconos/puntos/moneda.svg" alt="Moneda" class="canje-moneda-icono" />
+      <span id="canje-puntos-total">0 pts disponibles</span>
+    </div>
+  </div>
+
+  <!-- Aviso de bloqueo si ya jugó hoy -->
+  <p id="canje-aviso-bloqueo" class="canje-aviso hidden"></p>
+
+  <!-- Tarjetas de páginas -->
+  <div id="canje-tarjetas" class="canje-tarjetas">
+
+    <!-- Página 1 -->
+    <div class="canje-card" id="canje-card-1">
+      <div class="canje-card-top">
+        <img src="/Mi-pagina-web/assets/iconos/puntos/moneda.svg" alt="Moneda" class="canje-card-icono" />
+        <span class="canje-card-precio">10 pts</span>
+      </div>
+      <p class="canje-card-titulo">Página 1</p>
+      <p class="canje-card-desc">El inicio de todo. El primer paso de Timit.</p>
+      <div class="canje-card-contenido hidden" id="canje-texto-1">
+        <!--PÁGINA 1-->
+        <p>[ Timit cenando junto a su familia deja su mirada
+perdida en un reloj, el cual parece estar extraviado.
+La madre miro preocupada a su hijo, observando su
+mirada perdida llena de confusión en sus pupilas. Las
+cuales, algo dilatadas miraban un punto fijo, como sí
+observar ese extraño y viejo reloj fuera algo importante.
+-Que ocurre hijo? ¿Algo te preocupa? –Dice la madre
+inclinándose de forma precavida hacia su querido
+hijo...
+El abuelo al ver la nula comunicación de Timit hacia el
+entorno, presenta una breve preocupación oculta, la
+cual sin problema retiene, hasta que sus ojos logran
+resaltar lo que Timit observaba. al ver esto responde
+con algo de preocupación reprimida
+-Timit, estas bien? Timit reacciona¡¡ -Dice el abuelo a su
+vez dejando los cubiertos en la mesa, sin poder evitar
+del todo ese tono de afecto en su voz ]</p>
+      </div>
+      <button class="canje-btn" id="canje-btn-1" data-costo="10" data-id="1">
+        🔓 Desbloquear
+      </button>
+    </div>
+
+    <!-- Página 62 -->
+    <div class="canje-card" id="canje-card-2">
+      <div class="canje-card-top">
+        <img src="/Mi-pagina-web/assets/iconos/puntos/moneda.svg" alt="Moneda" class="canje-card-icono" />
+        <span class="canje-card-precio">20 pts</span>
+      </div>
+      <p class="canje-card-titulo">Página 62</p>
+      <p class="canje-card-desc">Un momento decisivo en la historia de Timit.</p>
+      <div class="canje-card-contenido hidden" id="canje-texto-2">
+        <!--PÁGINA 62-->
+        <p>[ Esa ves, ese día todo cambio, sí bien Habert agradecía
+ser amado, no quería ser quien era.
+El caos…aquel caos que se encontraba en mi confusión
+me consumió, me influyo a ser otro, a olvidarlos…a
+olvidarme.
+Los tres abrazados conformaban un instinto familiar,
+aquel pasado era imborrable, las intenciones nunca
+dejaron de ser puras, los llantos calmaron y Habert,
+agradecido con su amigo por eso, describió
+-Timit, mi amigo logro descifrarme y hacerme
+consciente de quien era
+-Le debemos todo a él, ese niño se merece nuestra
+admiración-Exclama Gin, quien limpiándose las
+lágrimas agradecía a dios por haber enviado a Timit a
+sus vidas
+Quien era ese chico tan bendecido-Pensaban ambos
+padres, sin embargo, en otra casa
+Timit por suerte o destino tenia alguien quien aclamara
+sus méritos, quien lo considerara un creador, una
+persona valiosa, quien viera su desarrollo como algo
+propio y no como algo “Divino” ]</p>
+      </div>
+      <button class="canje-btn" id="canje-btn-2" data-costo="20" data-id="2">
+        🔓 Desbloquear
+      </button>
+    </div>
+
+    <!-- Página 91 -->
+    <div class="canje-card" id="canje-card-3">
+      <div class="canje-card-top">
+        <img src="/Mi-pagina-web/assets/iconos/puntos/moneda.svg" alt="Moneda" class="canje-card-icono" />
+        <span class="canje-card-precio">30 pts</span>
+      </div>
+      <p class="canje-card-titulo">Página 91</p>
+      <p class="canje-card-desc">Un sueño irreversible.</p>
+      <div class="canje-card-contenido hidden" id="canje-texto-3">
+        <!--PÁGINA 91 -->
+        <p>[ Un alma, regresa, otra descansa…
+Timit se despertó, o eso pensaba, o eso soñaba… tras
+unos segundos de lucidez, analizo su alrededor, las
+hojas no caían como antes, los arboles simulaban ser los
+mismos, las personas no reaccionaban con naturalidad,
+parecía una actuación, como aquellas que su madre le
+narraba haber visto en el pasado, de repente, tras un
+pestañeo, un escándalo saturaba sus oídos, puso sus
+manos en su cabeza… eso intento
+-Que me ocurre, donde estoy –Gritaba con angustia
+Parecía un infierno en carne viva, el tiempo se
+ralentizaba en sus peores sensaciones, gritaba con
+euforia “¿Dónde estoy?, ¿qué es esto?”. Las luces de la
+luna se apagaron por completo durante un segundo, la
+multitud no se iba, seguía gritando, palabras,
+discusiones, opiniones, eran debates incontrolados, o
+gritos rebuscados. En su poca consciencia Timit hacia el
+intento de hablar, quizás era el ruido, un nudo en su
+garganta no lo dejaba expresar, las palabras no salían,
+era lo único de lo que podría sostenerse, sus
+movimientos lentos, y la multitud mostrando una
+ráfaga de acciones y palabras.
+Su lucidez se fue apagando… ]</p>
+      </div>
+      <button class="canje-btn" id="canje-btn-3" data-costo="30" data-id="3">
+        🔓 Desbloquear
+      </button>
+    </div>
+
+  </div>
+</section>
+  </main>
+
+    <!-- Asistente del libro: el botón permanece fijo en la parte inferior -->
+    <section class="ia-panel glass" id="ia-panel" aria-label="Asistente de Tiempo y Vida" hidden>
+      <header class="ia-header">
+        <div class="ia-heading">
+          <span class="ia-status-dot" aria-hidden="true"></span>
+          <div>
+            <h2>Asistente de Tiempo y Vida</h2>
+            <p>Pregúntame sobre el libro y su universo</p>
+          </div>
+        </div>
+        <button class="ia-close" id="ia-close" type="button" aria-label="Cerrar asistente">×</button>
+      </header>
+
+      <div class="ia-usage" aria-live="polite">
+        <div class="ia-usage-top">
+          <span>Uso estimado hoy</span>
+          <strong id="ia-usage-label">0 tokens</strong>
+        </div>
+        <div class="ia-usage-track"><div class="ia-usage-fill" id="ia-usage-fill"></div></div>
+        <small>Estimación local; no representa el límite oficial de Pollinations.</small>
+      </div>
+
+      <div class="ia-messages" id="ia-messages" role="log" aria-live="polite" aria-relevant="additions">
+        <article class="ia-message ia-bot-message">
+          <span class="ia-message-tag">ASISTENTE</span>
+          <p>¡Hola! Soy el asistente de <em>Tiempo y Vida</em>. Puedes preguntarme sobre la historia, sus personajes o sus ideas. Si algo no está en la información del autor, te lo diré en lugar de inventarlo.</p>
+        </article>
+      </div>
+
+      <form class="ia-form" id="ia-form">
+        <label class="ia-sr-only" for="ia-input">Escribe tu pregunta</label>
+        <textarea id="ia-input" rows="1" maxlength="1800" placeholder="Escribe tu pregunta..." required></textarea>
+        <button class="ia-send" id="ia-send" type="submit" aria-label="Enviar pregunta">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 21 3l-5.5 18-3.2-7.3L3 11.5Zm9.3 2.2L21 3"/></svg>
+        </button>
+      </form>
+      <p class="ia-footnote" id="ia-status">La conversación se conserva mientras esta página permanezca abierta.</p>
+    </section>
+
+    <button class="ia-launcher" id="ia-launcher" type="button" aria-label="Abrir asistente de inteligencia artificial" aria-expanded="false" aria-controls="ia-panel">
+      <img src="/Mi-pagina-web/assets/iconos/nano-robot.svg" alt="" />
+      <span>Pregúntale a la IA</span>
+    </button>
+
+  <audio id="audioPlayer" preload="auto"></audio>
+  <script src="/Mi-pagina-web/script.js"></script>
+  <script src="ia-conocimiento.js"></script>
+  <script src="ia.js"></script>
+</body>
+</html>
